@@ -34,14 +34,18 @@ const Detail = (props) => {
       </ImageTitle>
       <ContentMeta>
         <Controls>
+        <a href = {detailData.trailer} target="_blank" rel="noreferrer">
           <Player>
             <img src="/images/play-icon-black.png" alt="" />
             <span>Play</span>
           </Player>
+          </a>
+          <a href = {detailData.trailer} target="_blank" rel="noreferrer">
           <Trailer>
             <img src="/images/play-icon-white.png" alt="" />
             <span>Trailer</span>
           </Trailer>
+          </a>
           <AddList>
             <span />
             <span />
