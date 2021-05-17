@@ -9,6 +9,7 @@ import {
   setUserLoginDetails,
   setSignOutState,
 } from "../features/user/userSlice";
+
 const Header = (props) => {
   const dispatch = useDispatch();
   const history = useHistory();
@@ -44,6 +45,7 @@ const Header = (props) => {
         .catch((err) => alert(err.message));
     }
   };
+
   const setUser = (user) => {
     dispatch(
       setUserLoginDetails({
@@ -184,9 +186,9 @@ const NavMenu = styled.div`
       }
     }
   }
-  /* @media (max-width: 768px) {
+   @media (max-width: 768px) {
     display: none;
-  } */
+  } 
 `;
 
 const Login = styled.a`
@@ -197,7 +199,6 @@ const Login = styled.a`
   border: 1px solid #f9f9f9;
   border-radius: 4px;
   transition: all 0.2s ease 0s;
-
   &:hover {
     background-color: #f9f9f9;
     color: #000;
@@ -232,13 +233,11 @@ const SignOut = styled.div`
   cursor: pointer;
   align-items: center;
   justify-content: center;
-
   ${UserImg} {
     border-radius: 50%;
     width: 100%;
     height: 100%;
   }
-
   &:hover {
     ${DropDown} {
       opacity: 1;
