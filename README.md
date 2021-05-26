@@ -30,7 +30,7 @@
 
 ```
 $ git clone https://github.com/gabrielpasquantonio/Disney-Clone.git
-$ cd react-todolist
+
 $ npm install
 $ npm start
 ```
